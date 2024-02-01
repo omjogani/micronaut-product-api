@@ -1,0 +1,16 @@
+#Thu Feb 01 05:29:27 UTC 2024
+micronaut.application.name: micronaut-api
+datasources:
+  default:
+    db-type: mariadb
+    dialect: MYSQL
+    driver-class-name: org.mariadb.jdbc.Driver
+    jdbc-url: jdbc:mariadb://localhost:3306/product
+    username: root
+    password: root
+jpa:
+  default:
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: update
