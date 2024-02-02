@@ -13,8 +13,8 @@ public class ProductController {
         this.productService = productService;
     }
 
-        @Get("/all")
-        List<Product> getProducts() {
+    @Get("/all")
+    List<Product> getProducts() {
             return productService.getProducts();
         }
 
@@ -32,8 +32,8 @@ public class ProductController {
         return productService.getProductByName(name);
     }
 
-    @Error(global = true)
-    String notFound() {
-        return "Not found";
-    }
+//    @Error(global = true)
+//    String notFound() {
+//        return "Not found";
+//    }
 }

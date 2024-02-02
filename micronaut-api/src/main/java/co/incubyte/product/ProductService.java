@@ -15,7 +15,7 @@ public class ProductService {
         this.productRepository = productRepository;
     }
     public Product getProductById(String id) {
-        return productRepository.findById(id).orElseThrow(EntityNotFound::new);
+        return productRepository.findById(id).orElseThrow(() -> new EntityNotFound("Product with id [" + id + "] Not Found!"));
     }
 
     public List<Product> getProducts()  {
