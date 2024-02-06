@@ -1,3 +1,4 @@
+on notmine branch
 # Git Config
     - user.name
     - user.email
