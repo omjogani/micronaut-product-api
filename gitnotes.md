@@ -1,3 +1,4 @@
+Applied new change
 # Git Config
     - user.name
     - user.email
