@@ -1,5 +1,6 @@
 # Git Config
     - user.name
+    - Cause the merge conflicts
     - user.email
     - user.editor
     - (--global & Project based)
