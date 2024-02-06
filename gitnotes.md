@@ -1,6 +1,6 @@
 # Git Config
     - user.name
-    - THis will cause the merge conflicts
+    - conflicts
     - user.email
     - user.editor
     - (--global & Project based)
@@ -22,5 +22,9 @@
 # Stash
     - Save the changes temp.
     - git stash branch <branchname> : create new branch out of stash
+<<<<<<< HEAD
 - Is this working?
 Is it causing the merge conflicts.
+=======
+ causing the merge conflicts.
+>>>>>>> d0cbfbe ([Update])
