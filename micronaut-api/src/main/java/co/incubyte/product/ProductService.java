@@ -24,7 +24,8 @@ public class ProductService {
 
     public Product addProduct(ProductRequest body) {
         String id = new ULID().nextULID();
-        Product product = new Product(id, body.name());
+        double price = body.price();
+        Product product = new Product(id, body.name(), price);
         return productRepository.save(product);
     }
 

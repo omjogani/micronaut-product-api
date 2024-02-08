@@ -58,7 +58,8 @@ class ProductIntegrationTest {
     String name = UUID.randomUUID().toString();
     String body = """
     {
-        "name":"$name"
+        "name":"$name",
+        "price":100.0
     }
 """.replace("$name", name);
     // @formatter:off

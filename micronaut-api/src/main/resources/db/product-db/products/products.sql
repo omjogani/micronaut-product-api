@@ -10,3 +10,7 @@ CREATE TABLE products (
 ALTER TABLE products
     ADD createdAt TIMESTAMP,
     ADD updatedAt TIMESTAMP;
+
+--changeset om:add-price
+ALTER TABLE products
+    ADD price DECIMAL(10, 2);

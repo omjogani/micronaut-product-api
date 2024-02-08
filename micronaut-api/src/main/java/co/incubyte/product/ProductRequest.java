@@ -1,4 +1,4 @@
 package co.incubyte.product;
 
-public record ProductRequest(String name) {
+public record ProductRequest(String name, double price) {
 }

@@ -22,6 +22,7 @@ public class ProductController {
     Product getProductById(@PathVariable String id) {
         return productService.getProductById(id);
     }
+
     @Post()
     Product addProduct(@Body ProductRequest body) {
         return productService.addProduct(body);
