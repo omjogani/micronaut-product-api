@@ -21,7 +21,7 @@ public class Order {
     @DateCreated
     OffsetDateTime createdAt;
 
-    // Empty Constructor
+
     public Order() {
     }
 

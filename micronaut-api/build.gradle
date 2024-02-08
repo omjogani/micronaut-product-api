@@ -31,6 +31,18 @@ dependencies {
     implementation("io.micronaut.liquibase:micronaut-liquibase")
 
     implementation("io.micronaut.validation:micronaut-validation")
+
+//    ---------------------------------------------------------
+//    annotationProcessor("io.micronaut.serde:micronaut-serde-processor")
+//    implementation("io.micronaut.serde:micronaut-serde-jackson")
+    testImplementation("io.micronaut.test:micronaut-test-rest-assured")
+    testImplementation("org.assertj:assertj-core")
+    testImplementation("org.testcontainers:junit-jupiter")
+    testImplementation("org.testcontainers:mariadb")
+    testImplementation("org.testcontainers:mockserver")
+    testImplementation("org.testcontainers:testcontainers")
+    implementation("io.micronaut:micronaut-management")
+    testImplementation("org.mock-server:mockserver-client-java:5.15.0")
 }
 
 
@@ -38,8 +50,8 @@ application {
     mainClass.set("com.example.Application")
 }
 java {
-    sourceCompatibility = JavaVersion.toVersion("21")
-    targetCompatibility = JavaVersion.toVersion("21")
+    sourceCompatibility = JavaVersion.toVersion("17")
+    targetCompatibility = JavaVersion.toVersion("17")
 }
 
 

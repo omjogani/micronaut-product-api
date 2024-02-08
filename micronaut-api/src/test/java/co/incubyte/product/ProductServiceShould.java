@@ -36,8 +36,15 @@ class ProductServiceShould {
         Assertions.assertThat(product.getName()).isEqualTo("FAKE_NAME");
     }
 
+    // add test to add price in the product
     @Test
-    void demo() {
-        
+    void add_price_to_product() {
+        when(productRepository.save(any(Product.class))).then(returnsFirstArg());
+
+        Product product = productService.addProduct(new ProductRequest("FAKE_NAME", 100.0));
+
+        verify(productRepository).save(product);
+        Assertions.assertThat(product.getName()).isEqualTo("FAKE_NAME");
+        Assertions.assertThat(product.getPrice()).isEqualTo(100.0);
     }
 }
